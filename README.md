@@ -8,4 +8,4 @@
 
 ---
 具体功能看下图：
-![示例](https://github.com/keepsleep007/goski_APP_Tool/blob/main/image1.jpg "示例")  
+![示例](https://github.com/keepsleep007/goski_APP_Tool/blob/master/image1.jpg "示例")  
