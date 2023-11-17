@@ -27,8 +27,8 @@ public class hookAPP implements IXposedHookLoadPackage {
                 XposedBridge.log("====class load ok====");
                 // 查找并且hook
                 Class baseResp = classLoader.loadClass("com.goski.goskibase.basebean.BaseResp");
-                XposedHelpers.findAndHookMethod("com.goski.sharecomponent.viewmodel.SkiFieldPhotoTimeLineViewModel$a", classLoader, "f", baseResp, new XC_MethodHook() {
-                    final Class<?> SkiFieldDetailPhoto = XposedHelpers.findClass("com.goski.goskibase.basebean.circle.SkiFieldDetailPhoto", classLoader);
+                XposedHelpers.findAndHookMethod("com.goski.sharecomponent.viewmodel.SkiFieldPhotoTimeLineViewModel$a", classLoader, "onSuccess", baseResp, new XC_MethodHook() {
+                    // final Class<?> SkiFieldDetailPhoto = XposedHelpers.findClass("com.goski.goskibase.basebean.circle.SkiFieldDetailPhoto", classLoader);
 
                     @Override
                     protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
