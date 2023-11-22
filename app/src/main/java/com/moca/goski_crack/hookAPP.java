@@ -119,7 +119,7 @@ public class hookAPP implements IXposedHookLoadPackage {
                 //     }
                 // });
 
-                XposedHelpers.findAndHookConstructor("com.goski.sharecomponent.viewmodel.o0", classLoader, String.class, String.class, boolean.class, new XC_MethodHook() {
+                XposedHelpers.findAndHookConstructor("com.goski.sharecomponent.viewmodel.n0", classLoader, String.class, String.class, boolean.class, new XC_MethodHook() {
                     @Override
                     protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
                         super.beforeHookedMethod(param);
